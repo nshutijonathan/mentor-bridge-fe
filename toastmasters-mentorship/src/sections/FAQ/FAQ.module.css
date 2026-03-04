@@ -1,0 +1,107 @@
+.faq {
+  padding: 80px 0;
+  background: white;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #123E5C;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  text-align: left;
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.item {
+  padding: 20px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background: #F5F6F7;
+}
+
+.question {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1A1A1A;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.answer {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 0;
+  border-top: 1px solid #E5E7EB;
+}
+
+.ctaTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 12px;
+}
+
+.ctaSubtext {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.ctaButton {
+  background: #123E5C;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.ctaButton:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+}

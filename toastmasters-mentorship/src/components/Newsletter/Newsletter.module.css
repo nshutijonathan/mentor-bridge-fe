@@ -1,0 +1,81 @@
+.newsletter {
+  width: 800px;
+  max-width: 90%;
+  margin: -60px auto 0;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.description {
+  text-align: center;
+  color: #555555;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #7A0C17;
+}
+
+.button {
+  background: #F4C542;
+  color: #1A1A1A;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    width: 100%;
+    max-width: 100%;
+    margin: -40px 20px 0;
+    padding: 30px 20px;
+  }
+  
+  .form {
+    flex-direction: column;
+  }
+  
+  .button {
+    width: 100%;
+  }
+}
