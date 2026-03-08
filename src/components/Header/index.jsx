@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -21,9 +22,14 @@ const Header = () => {
         <a href="#mentorship" className={styles.navLink}>Digital Mentorship</a>
       </nav>
       
-      <button className={styles.ctaButton}>
-        Login / Sign In
-      </button>
+      <div className={styles.navButtons}>
+        <Link to="/login">
+          <button className={styles.loginButton}>Login</button>
+        </Link>
+        <Link to="/signup">
+          <button className={styles.signupButton}>Sign Up</button>
+        </Link>
+      </div>
     </header>
   );
 };

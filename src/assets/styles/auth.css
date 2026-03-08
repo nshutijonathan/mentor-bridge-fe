@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.login-bg {
+  background: linear-gradient(135deg,#4A0A0F,#5A0F0F);
+}
+
+.signup-bg {
+  background:#0E3A5D;
+}
+
+.auth-card {
+  width: 700px;
+  height: 520px;
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.auth-form {
+  flex: 0.8;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.auth-form h2 {
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.subtext a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.subtext a:hover {
+  text-decoration: underline;
+}
+
+.input-line {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.auth-form input {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+}
+
+.password-hint {
+  font-size: 10px;
+  color: #888;
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.auth-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.auth-image {
+  flex: 1.2;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role-group {
+  margin: 10px 0;
+}
+
+.role-label {
+  display: block;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.role {
+  display: flex;
+  gap: 20px;
+}
+
+.role label {
+  font-size: 12px;
+  color: #666;
+}
+
+.terms {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 8px;
+}
