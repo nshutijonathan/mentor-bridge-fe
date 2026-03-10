@@ -1,0 +1,125 @@
+.page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px 24px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #0369a1;
+  text-decoration: none;
+}
+
+.title {
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  color: #475569;
+}
+
+.error {
+  color: #b91c1c;
+  margin-bottom: 12px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.name {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.email {
+  margin: 0;
+  color: #475569;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.grid {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+}
+
+.key {
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+.value {
+  margin: 0;
+  color: #0f172a;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.editButton,
+.deleteButton {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editButton {
+  background: #075985;
+  color: #fff;
+}
+
+.deleteButton {
+  background: #dc2626;
+  color: #fff;
+}
+
+.deleteButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
