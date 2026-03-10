@@ -1,0 +1,242 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px 40px 100px;
+  background: #054165;
+  min-height: 110px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+
+/* Logo Container  */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Right Section */
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 8px;
+  margin-right: 80px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.socialLink.facebook {
+  background-color: #78242e;
+}
+.socialLink.youtube {
+  background-color: #78242e;
+}
+.socialLink.linkedin {
+  background-color: #78242e;
+}
+
+.socialLink:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+.socialLink svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Copyright */
+.infoText {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+  margin-right: 30px;
+  
+
+}
+.infoText {
+  padding-right: 50px;
+}
+.copyright {
+  font-size: 12px;
+}
+
+/* Go To Top Button */
+.goToTopButton {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  background-color: #dbcf73;
+  border: none;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #0a3d5c;
+}
+
+.goToTopButton:hover {
+  background-color: #f9e79f;
+  transform: translateY(-2px);
+}
+
+.goToTopButton:active {
+  transform: scale(0.95);
+}
+
+.goToTopButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding: 24px 30px 30px 40px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .socialLink {
+    width: 30px;
+    height: 30px;
+  }
+
+  .socialLink svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .infoText {
+    font-size: 11px;
+    margin-right: 0;
+  }
+
+  .socialIcons {
+    margin-right: 50px;
+  }
+
+  .goToTopButton {
+    width: 34px;
+    height: 34px;
+    right: 20px;
+  }
+
+  .goToTopButton svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 20px 18px 24px 24px;
+  }
+
+  .logo {
+    height: 42px;
+  }
+
+  .socialIcons {
+    gap: 6px;
+    margin-right: 60px;
+  }
+
+  .infoText {
+    font-size: 10px;
+    margin-right: 20px;
+    padding-right: 40px;
+  }
+
+  .goToTopButton {
+    width: 32px;
+    height: 32px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 420px) {
+
+  .footer {
+    min-height: 110px;    
+    padding: 20px 20px 20px 40px;
+  }
+
+ 
+  .logo {
+    height: 34px;
+  }
+
+  
+  .socialLink {
+    width: 26px;
+    height: 26px;
+  }
+
+  .socialLink svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  
+  .infoText {
+    font-size: 9px;
+    margin-left: 70px; 
+
+     
+  }
+
+  
+  .goToTopButton {
+    width: 30px;
+    height: 30px;
+    right: 12px;
+    bottom: 14px;
+  }
+
+  .goToTopButton svg {
+    width: 14px;
+    height: 14px;
+  }
+
+}
