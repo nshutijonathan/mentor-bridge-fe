@@ -5,18 +5,17 @@ import Platform from '../sections/Platform';
 import CTASection from '../sections/CTASection';
 import FAQ from '../sections/FAQ';
 import Footer from '../components/Footer';
-
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header /> 
       <main>
         <Hero />
         <Platform />
         <CTASection />
-        <FAQ />
+        <FAQ /> 
       </main>
-      <Footer />
+       <Footer /> 
     </div>
   );
 };
