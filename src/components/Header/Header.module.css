@@ -66,6 +66,46 @@
   box-shadow: 0 4px 12px rgba(244, 197, 66, 0.3);
 }
 
+.navButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.loginButton {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.loginButton:hover {
+  background: white;
+  color: #1A1A1A;
+  transform: translateY(-1px);
+}
+
+.signupButton {
+  background: #F4C542;
+  color: #1A1A1A;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.signupButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(244, 197, 66, 0.3);
+}
+
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -79,6 +119,20 @@
   .logoImage {
     width: 32px;
     height: 32px;
+  }
+  
+  .navButtons {
+    gap: 8px;
+  }
+  
+  .loginButton {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .signupButton {
+    padding: 6px 12px;
+    font-size: 12px;
   }
   
   .ctaButton {
