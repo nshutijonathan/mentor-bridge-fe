@@ -1,14 +1,16 @@
 .contentCard {
   background: #ffffff;
-  border: 1.5px solid #e7e7e7;
+  border: 2px solid rgba(179, 179, 179, 0.2);
   border-radius: 10px;
   padding: clamp(28px, 3vw, 48px);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  width: min(1100px, 92vw);
+  margin-inline: auto;
 }
 
 .menteeBioCard {
   padding: 16px 30px 18px;
-  margin: 50px 102px;
+  margin: 28px auto;
 }
 
 .menteeBioCard .cardHeader {
@@ -108,7 +110,6 @@
 @media (max-width: 1024px) {
 
   .contentCard {
-    margin: 40px 60px;
     padding: 28px;
   }
 
@@ -127,8 +128,8 @@
 @media (max-width: 768px) {
 
   .contentCard {
-    margin: 32px 40px;
     padding: 24px;
+    width: min(100%, 94vw);
   }
 
   .cardHeader {
@@ -154,7 +155,6 @@
 @media (max-width: 480px) {
 
   .contentCard {
-    margin: 24px 18px;
     padding: 20px;
   }
 

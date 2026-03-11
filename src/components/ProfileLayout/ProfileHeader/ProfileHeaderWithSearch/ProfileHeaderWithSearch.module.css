@@ -9,7 +9,7 @@
   padding: 76px clamp(24px, 5vw, 120px) 38px clamp(24px, 5vw, 120px);
 
   background: #ffffff;
-  border-bottom: 1.9px solid #e6e6e6;
+  border-bottom: 2px solid rgba(179, 179, 179, 0.2);
 
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -118,7 +118,29 @@
 }
 
 /* AVATAR */
+.avatarLetter {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0a3f5f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
 
+.avatarGuest {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .avatar {
   width: 48px;
   height: 48px;
