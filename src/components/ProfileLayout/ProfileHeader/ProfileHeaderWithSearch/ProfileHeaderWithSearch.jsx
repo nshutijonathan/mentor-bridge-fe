@@ -7,7 +7,15 @@ import { GrSearch } from "react-icons/gr";
 import { TfiEmail } from "react-icons/tfi";
 import { CiBellOn } from "react-icons/ci";
 
-function ProfileHeaderWithSearch({ userAvatar }) {
+function ProfileHeaderWithSearch({ userAvatar, user }) {
+  // Resolve avatar safely for backend integration
+  const avatar = userAvatar || user?.avatar || user?.profile_image || null;
+
+  const userName =
+    user?.name ||
+    `${user?.first_name ?? ""} ${user?.last_name ?? ""}`.trim() ||
+    "User";
+
   return (
     <header className={styles.header}>
       {/* LOGO */}
@@ -56,14 +64,17 @@ function ProfileHeaderWithSearch({ userAvatar }) {
 
         {/* AVATAR */}
         <div className={styles.avatar}>
-          {userAvatar ? (
+          {avatar ? (
             <img
-              src={userAvatar}
-              alt="User profile"
+              src={avatar}
+              alt={`${userName} profile`}
               className={styles.avatarImg}
             />
           ) : (
-            <div className={styles.avatarPlaceholder}></div>
+            <div
+              className={styles.avatarPlaceholder}
+              aria-label="User avatar placeholder"
+            />
           )}
         </div>
       </div>

@@ -1,0 +1,307 @@
+.summaryCard {
+  background: #ffffff;
+  border: 1.5px solid #e7e7e7;
+  border-radius: 16px;
+  padding: clamp(24px, 2.5vw, 40px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  margin: 50px 102px;
+}
+
+.menteeSummaryCard {
+  display: grid;
+  gap: 10px;
+  padding: 28px 32px;
+  position: relative;
+  min-height: 200px;
+}
+
+.menteeSummaryHeader {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+}
+
+.menteeSummaryBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.identityBlock {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 3px solid #2b6b91;
+  background: linear-gradient(135deg, #0d486f, #c18d2c);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.menteeAvatar {
+  width: 140px;
+  height: 140px;
+  border-width: 4px;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileName {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin-bottom: 2px;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.profileMeta {
+  color: #5f5f5f;
+  font-size: 1.2rem;
+}
+
+.statsRow {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.menteeStatsRow {
+  gap: 50px;
+  margin-right: 26px;
+  margin-top: 16px;
+}
+
+.statItem {
+  min-width: 100px;
+  display: grid;
+  text-align: left;
+}
+
+.statItem strong {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.currentMentorsValue {
+  color: #123d56;
+}
+
+.yearsExperienceValue {
+  color: #1e8d41;
+}
+
+.completedValue {
+  color: #740c15;
+}
+
+.statItem span {
+  font-size: 1rem;
+  color: black;
+}
+
+.editProfileButton {
+  border: 1.5px solid #0c4367;
+  background: #fff;
+  color: #0c4367;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px; /* reduced from 10px */
+  font-weight: 600;
+  cursor: pointer;
+  padding: 3px 2px; /* reduced from 3px 8px */
+  font-size: 0.55rem; /* slightly smaller */
+  box-shadow: 0 0 2px rgba(12, 67, 103, 0.35);
+}
+.editProfileButton svg {
+  font-size: 14px;
+}
+/* ============================= */
+/* LAPTOP (1200px and below) */
+/* ============================= */
+
+@media (max-width: 1200px) {
+
+  .summaryCard {
+    margin: 40px 60px;
+  }
+
+  .menteeAvatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profileName {
+    font-size: 2rem;
+  }
+
+  .profileMeta {
+    font-size: 1.1rem;
+  }
+
+  .menteeStatsRow {
+    gap: 40px;
+  }
+
+}
+
+
+/* ============================= */
+/* TABLET (1024px and below) */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .summaryCard {
+    margin: 32px 40px;
+  }
+
+  .menteeSummaryBody {
+    gap: 40px;
+  }
+
+  .identityBlock {
+    gap: 28px;
+  }
+
+  .menteeAvatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .profileName {
+    font-size: 1.8rem;
+  }
+
+  .profileMeta {
+    font-size: 1rem;
+  }
+
+  .statItem strong {
+    font-size: 1.4rem;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE TABLET (768px and below) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .summaryCard {
+    margin: 24px 20px;
+  }
+
+  .menteeSummaryBody {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .identityBlock {
+    gap: 22px;
+  }
+
+  .menteeAvatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profileName {
+    font-size: 1.6rem;
+  }
+
+  .profileMeta {
+    font-size: 0.95rem;
+  }
+
+  .menteeStatsRow {
+    margin-right: 0;
+    gap: 30px;
+  }
+
+  .statItem strong {
+    font-size: 1.3rem;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE (480px and below) */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  .summaryCard {
+    margin: 16px 12px;
+  }
+
+  .menteeSummaryCard {
+    padding: 22px 18px;
+  }
+
+  .menteeSummaryHeader {
+    top: 12px;
+    right: 16px;
+  }
+
+  .identityBlock {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .menteeAvatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profileName {
+    font-size: 1.4rem;
+  }
+
+  .profileMeta {
+    font-size: 0.9rem;
+  }
+
+  .statsRow {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menteeStatsRow {
+    gap: 20px;
+    margin-top: 8px;
+  }
+
+  .statItem strong {
+    font-size: 1.2rem;
+  }
+
+  .statItem span {
+    font-size: 0.9rem;
+  }
+
+  .editProfileButton {
+    font-size: 0.5rem;
+  }
+
+  .editProfileButton svg {
+    font-size: 12px;
+  }
+
+}
