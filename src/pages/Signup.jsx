@@ -1,4 +1,5 @@
 import "../assets/styles/auth.css";
+import districtLogo from "../assets/district-114-logo.svg";
 
 export default function Signup() {
   return (
@@ -9,7 +10,7 @@ export default function Signup() {
         </div>
 
         <div className="auth-form">
-          <img src="/logo.png" alt="District 114" className="logo"/>
+          <img src={districtLogo} alt="District 114" className="logo"/>
 
           <h2>Create a New Account</h2>
           <p className="subtext">
