@@ -2,18 +2,23 @@ import ProfileSummary from "../components/Profile/ProfileSummary/ProfileSummary"
 import BioSection from "../components/Profile/BioSection/BioSection";
 import ProfileHeaderWithSearch from "../components/ProfileLayout/ProfileHeader/ProfileHeaderWithSearch/ProfileHeaderWithSearch";
 import ProfileFooter from "../components/ProfileLayout/ProfileFooter/ProfileFooter";
-import { userMock } from "../mocks/userMock";
+import GuidanceNeeds from "../components/Mentee/GuidanceNeeds/GuidanceNeeds";
+import LearningGoalsCard from "../components/Mentee/LearningGoals/LearningGoals";
+import RequestsList from "../components/Requests/RequestsList";
 function MenteeProfilePage() {
   return (
     <div
       style={{
-        backgroundColor: "#fbfcfe",
+        backgroundColor: "#f6f8f9",
         minHeight: "100vh",
       }}
     >
       <ProfileHeaderWithSearch />
-      <ProfileSummary user={userMock} />
+      <ProfileSummary />
       <BioSection />
+      <GuidanceNeeds />
+      <LearningGoalsCard />
+      <RequestsList />
       <ProfileFooter />
     </div>
   );

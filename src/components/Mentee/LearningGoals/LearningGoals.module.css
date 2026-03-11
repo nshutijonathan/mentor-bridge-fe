@@ -1,0 +1,309 @@
+/* ===================================== */
+/* Learning Goals & Experience Section */
+/* ===================================== */
+
+.contentCard {
+  background: #ffffff;
+  border: 2px solid rgba(179, 179, 179, 0.2);
+  border-radius: 12px;
+  padding: clamp(26px, 3vw, 44px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  margin: 28px auto;
+  width: min(1100px, 92vw);
+}
+
+.learningCard {
+  padding: 22px 30px 22px;
+}
+
+/* ------------------------------------- */
+/* Card Header */
+/* ------------------------------------- */
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.cardHeader h2 {
+  font-size: 1.6rem;
+  color: #202020;
+  font-weight: 600;
+}
+
+/* Edit Button */
+
+.editButton {
+  border: none;
+  background: transparent;
+  color: #23465f;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.editButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ------------------------------------- */
+/* Metadata (Location / Timezone / Level) */
+/* ------------------------------------- */
+
+.learningMetaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 90px;
+  margin-bottom: 24px;
+}
+
+.learningMetaItem p {
+  color: #1f1f1f;
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Eyebrow Label */
+
+.eyebrow {
+  display: inline-block;
+  color: #6f706d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.learningEyebrow {
+  margin-bottom: 12px;
+}
+
+/* ------------------------------------- */
+/* Goals Stack */
+/* ------------------------------------- */
+
+.goalStack {
+  display: grid;
+  gap: 18px;
+}
+
+/* Individual Goal Card */
+
+.goalCard {
+  background: #ffffff;
+  border: 2px solid #d2d6db;
+  border-radius: 12px;
+  padding: 26px 18px 26px;
+  transition: border-color 0.2s ease;
+}
+
+.goalCard:hover {
+  border-color: #b6bcc2;
+}
+
+/* Goal Header */
+
+.goalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.goalHeader h3 {
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+  color: #111;
+  font-weight: 700;
+}
+
+.goalHeader p {
+  color: #8a8a8a;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Deadline */
+
+.goalDeadline {
+  color: #7a7979;
+  font-size: 0.86rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ------------------------------------- */
+/* Progress */
+/* ------------------------------------- */
+
+.goalProgressLabelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: #7a7a7a;
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+.progressTrack {
+  height: 8px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 2px solid #cfcfcf;
+  overflow: hidden;
+}
+
+/* Progress Fill */
+
+.progressFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #08334c, #0a3f5f, #13608f);
+  transition: width 0.6s ease;
+}
+
+/* ------------------------------------- */
+/* Empty State */
+/* ------------------------------------- */
+
+.emptyState {
+  color: #9aa3ab;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ===================================== */
+/* Responsive Design */
+/* ===================================== */
+
+/* Tablets */
+
+@media (max-width: 960px) {
+
+  .learningMetaGrid {
+    gap: 40px;
+  }
+
+  .contentCard {
+    padding: 26px 32px;
+  }
+
+}
+
+/* Medium Screens */
+
+@media (max-width: 720px) {
+
+  .learningCard {
+    padding: 20px 20px 18px;
+  }
+
+  .contentCard {
+    width: min(100%, 94vw);
+    padding: 24px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cardHeader h2 {
+    font-size: 1.4rem;
+  }
+
+  .learningMetaGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .goalHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .goalDeadline {
+    align-self: flex-start;
+  }
+
+  .goalCard {
+    padding: 22px 16px;
+  }
+
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+  .learningCard {
+    padding: 16px 14px;
+  }
+
+  .contentCard {
+    padding: 20px;
+  }
+
+  .cardHeader h2 {
+    font-size: 1.2rem;
+  }
+
+  .learningMetaItem p {
+    font-size: 0.9rem;
+  }
+
+  .goalCard {
+    padding: 18px 14px;
+  }
+
+  .goalHeader h3 {
+    font-size: 0.84rem;
+  }
+
+  .goalHeader p {
+    font-size: 0.78rem;
+  }
+
+  .goalDeadline {
+    font-size: 0.78rem;
+  }
+
+  .goalProgressLabelRow {
+    font-size: 0.78rem;
+  }
+
+  .progressTrack {
+    height: 7px;
+  }
+
+}
+
+/* Very Small Phones */
+
+@media (max-width: 360px) {
+
+  .goalHeader h3 {
+    font-size: 0.8rem;
+  }
+
+  .goalHeader p {
+    font-size: 0.74rem;
+  }
+
+  .goalDeadline {
+    font-size: 0.74rem;
+  }
+
+}

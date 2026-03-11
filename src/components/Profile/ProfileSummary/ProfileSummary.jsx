@@ -1,9 +1,27 @@
 import styles from "./ProfileSummary.module.css";
 import { BsPencil } from "react-icons/bs";
-import { userMock } from "../../../mocks/userMock";
+
 
 const PencilIcon = BsPencil;
+const userMock = {
+  user: {
+    id: "1",
+    name: "Daniel Shiferaw",
+    first_name: "Daniel",
+    last_name: "Shiferaw",
+    role: "Toastmaster",
 
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+
+    profile_image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+
+  stats: {
+    currentMentors: 1,
+    yearsExperience: 1,
+    completed: 5,
+  },
+};
 function ProfileSummary({ user, stats, onEdit = () => {} }) {
 
   const profileUser = user || userMock.user;

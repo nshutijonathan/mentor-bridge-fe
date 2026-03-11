@@ -9,7 +9,7 @@
   padding: 76px clamp(24px, 5vw, 120px) 38px clamp(24px, 5vw, 120px);
 
   background: #ffffff;
-  border-bottom: 1.9px solid #e6e6e6;
+  border-bottom: 1.9px solid #b3b3b3;
 
   display: grid;
   grid-template-columns: auto auto;

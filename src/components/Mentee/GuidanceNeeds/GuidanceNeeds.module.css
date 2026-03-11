@@ -1,0 +1,235 @@
+/* ===================================== */
+/* Interests & Guidance Needs Section */
+/* ===================================== */
+
+.contentCard {
+  background: #ffffff;
+  border: 2px solid rgba(179, 179, 179, 0.2);
+  border-radius: 10px;
+  padding: clamp(28px, 3vw, 48px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  margin: 28px auto;
+  width: min(1100px, 92vw);
+}
+
+.interestsCard {
+  padding: 25px 24px 25px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cardHeader h2 {
+  font-size: 1.6rem;
+  color: #202020;
+}
+
+.editButton {
+  border: none;
+  background: transparent;
+  color: #23465f;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.editButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+
+.eyebrow {
+  display: inline-block;
+  color: #6f706d;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.interestsEyebrow {
+  margin-bottom: 10px;
+}
+.emptyText {
+  color: #9aa3ab;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.guidanceEyebrow {
+  margin-top: 25px;
+}
+
+/* Tags / Areas of Interest */
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border: 1.8px solid #d6dbe0;
+  border-radius: 999px;
+  background: #f9fafb;
+  color: #1e2a34;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Guidance Needs Grid */
+.needsGrid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.needCard {
+  position: relative;
+  background: #fff;
+  border: 2px solid #ced3d8;
+  border-radius: 16px;
+  padding: 16px 14px 14px;
+}
+
+.needLabel {
+  display: block;
+  color: #2f2f2f;
+  font-size: 0.89rem;
+  font-weight: 900;
+  padding-right: 72px;
+}
+
+.needCard p {
+  color: #8c8c8f;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.needPriority {
+  position: absolute;
+  top: 28px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  padding: 4px 10px;
+  border-radius: 9px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.high {
+  color: #8b1e20;
+  background: #fce7e7;
+  border: 1px solid #e3aaaa;
+}
+
+.medium {
+  color: #8c6100;
+  background: #fff4d9;
+  border: 1px solid #ead19a;
+}
+
+.low {
+  color: #20643c;
+  background: #e7f5eb;
+  border: 1px solid #a9d0b5;
+}
+
+/* ===================================== */
+/* Responsive Design */
+/* ===================================== */
+
+@media (max-width: 960px) {
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contentCard {
+    padding: 28px;
+  }
+  
+  .needsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .interestsCard {
+    padding: 20px 16px;
+  }
+
+  .contentCard {
+    width: min(100%, 94vw);
+    padding: 24px;
+  }
+  
+  .needsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cardHeader h2 {
+    font-size: 1.4rem;
+  }
+  
+  .needCard {
+    padding: 14px 12px 12px;
+  }
+  
+  .needLabel {
+    padding-right: 60px;
+    font-size: 0.85rem;
+  }
+  
+  .needPriority {
+    top: 20px;
+    min-width: 50px;
+    padding: 3px 8px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .interestsCard {
+    padding: 16px 12px;
+  }
+
+  .contentCard {
+    padding: 20px;
+  }
+  
+  .cardHeader h2 {
+    font-size: 1.2rem;
+  }
+  
+  .tag {
+    padding: 3px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .needCard p {
+    font-size: 0.8rem;
+  }
+  
+  .needPriority {
+    top: 16px;
+    min-width: 45px;
+    padding: 2px 6px;
+    font-size: 0.6rem;
+  }
+}

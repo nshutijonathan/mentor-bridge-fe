@@ -3,10 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 60px 40px 100px;
-  background: #054165;
+  background: #064165;
   min-height: 110px;
   font-family: "Poppins", sans-serif;
   position: relative;
+  gap: 24px;
 }
 
 /* Logo Container  */
@@ -164,7 +165,10 @@
 @media (max-width: 600px) {
 
   .footer {
-    padding: 20px 18px 24px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 18px 26px;
   }
 
   .logo {
@@ -172,21 +176,25 @@
   }
 
   .socialIcons {
-    gap: 6px;
-    margin-right: 60px;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .rightSection {
+    align-items: flex-start;
   }
 
   .infoText {
     font-size: 10px;
-    margin-right: 20px;
-    padding-right: 40px;
+    margin: 0;
+    padding: 0;
   }
 
   .goToTopButton {
     width: 32px;
     height: 32px;
-    right: 14px;
-    bottom: 14px;
+    right: 18px;
+    bottom: 18px;
   }
 
 }
@@ -196,8 +204,9 @@
 @media (max-width: 420px) {
 
   .footer {
-    min-height: 110px;    
-    padding: 20px 20px 20px 40px;
+    min-height: 0;    
+    padding: 18px 16px 20px;
+    gap: 14px;
   }
 
  
@@ -219,9 +228,7 @@
   
   .infoText {
     font-size: 9px;
-    margin-left: 70px; 
-
-     
+    margin: 0;
   }
 
   
@@ -229,7 +236,7 @@
     width: 30px;
     height: 30px;
     right: 12px;
-    bottom: 14px;
+    bottom: 12px;
   }
 
   .goToTopButton svg {

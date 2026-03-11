@@ -1,0 +1,296 @@
+/* ===================================== */
+/* Mentor Request History Section */
+/* ===================================== */
+
+.contentCard {
+  background: #ffffff;
+  border: 2px solid rgba(179, 179, 179, 0.2);
+  border-radius: 12px;
+  padding: clamp(28px, 3vw, 48px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  margin: 28px auto;
+  width: min(1100px, 92vw);
+}
+
+.requestHistoryCard {
+  padding: 26px 30px;
+}
+
+/* ------------------------------------- */
+/* Header */
+/* ------------------------------------- */
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.cardHeader h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.requestHistoryIntro {
+  font-size: 0.95rem;
+  color: #66737c;
+  margin-bottom: 18px;
+}
+
+/* ------------------------------------- */
+/* Request Groups */
+/* ------------------------------------- */
+
+.requestGroup {
+  display: grid;
+  gap: 14px;
+}
+
+.requestGroup + .requestGroup {
+  margin-top: 18px;
+}
+
+.requestGroupTitle {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #8d122e;
+}
+
+/* ------------------------------------- */
+/* Request Grids */
+/* ------------------------------------- */
+
+/* Shared grid */
+.pendingRequestGrid,
+.requestGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 20px;
+}
+
+/* ------------------------------------- */
+/* Request Card */
+/* ------------------------------------- */
+
+.requestCard {
+  background: #fff;
+  border: 1.2px solid #bdbdbd;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border 0.15s ease;
+}
+
+.requestCard:hover {
+  border-color: #9f9f9f;
+}
+
+/* ------------------------------------- */
+/* Header Section */
+/* ------------------------------------- */
+
+.requestHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 16px 10px;
+  gap: 12px;
+}
+
+.requestIdentity {
+  display: flex;
+  gap: 12px;
+  min-width: 0;
+}
+
+/* Avatar */
+
+.requestAvatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Identity Text */
+
+.requestIdentityCopy {
+  display: grid;
+  gap: 2px;
+}
+
+.requestIdentityCopy h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #111;
+  padding-top:10px
+}
+
+.requestIdentityCopy p {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #57656f;
+}
+
+/* ------------------------------------- */
+/* Status Badge */
+/* ------------------------------------- */
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusBadge svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Pending */
+
+.pending {
+ background: #72102f;
+  color: white;
+}
+
+/* Accepted */
+
+.active {
+  background: #18974b;
+  color: white;
+}
+
+/* Declined */
+
+.declined {
+  background: #d94c4c;
+  color: white;
+}
+
+/* ------------------------------------- */
+/* Footer */
+/* ------------------------------------- */
+
+.requestFooter {
+  border-top: 1px solid #d0d0d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.requestMeta {
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: #6b6b6b;
+}
+
+.requestLinkButton {
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.requestLinkButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Cancel */
+
+.cancelAction {
+  color: #720a14;
+}
+
+/* Message */
+
+.messageAction {
+  color: #5c6468;
+}
+
+/* ===================================== */
+/* Responsive Design */
+/* ===================================== */
+
+@media (max-width: 960px) {
+
+  .requestGrid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .pendingRequestGrid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+@media (max-width: 720px) {
+
+  .requestHistoryCard {
+    padding: 20px 18px;
+  }
+
+  .requestGrid,
+  .pendingRequestGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardHeader h2 {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .requestHistoryCard {
+    padding: 16px 14px;
+  }
+
+  .cardHeader h2 {
+    font-size: 1.2rem;
+  }
+
+  .requestHistoryIntro {
+    font-size: 0.85rem;
+  }
+
+  .requestAvatar {
+    width: 46px;
+    height: 46px;
+  }
+
+  .requestIdentityCopy h3 {
+    font-size: 0.84rem;
+  }
+
+  .requestIdentityCopy p {
+    font-size: 0.6rem;
+  }
+
+  .requestFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+}
