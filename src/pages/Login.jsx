@@ -1,4 +1,5 @@
 import "../assets/styles/auth.css";
+import districtLogo from "../assets/district-114-logo.svg";
 
 export default function Login() {
   return (
@@ -6,7 +7,7 @@ export default function Login() {
       <div className="auth-card">
         <div className="auth-form">
           <img
-            src="/logo.png"
+            src={districtLogo}
             alt="District 114"
             className="logo"
           />

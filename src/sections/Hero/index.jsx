@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../../layouts/Container';
 import styles from './Hero.module.css';
+import publicSpeakingImage from '../../assets/public-speaking.svg';
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1432821596592-e2d18b781c8f?w=600&h=400&fit=crop&crop=center" 
+              src={publicSpeakingImage}
               alt="Public speaking" 
               className={styles.illustration}
             />
