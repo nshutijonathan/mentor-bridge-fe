@@ -8,14 +8,16 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <div>
-      <Header /> 
+     <Header />  
       <main>
-        <Hero />
+    
+       <Hero />
         <Platform />
         <CTASection />
-        <FAQ /> 
+        <FAQ />  
+        
       </main>
-       <Footer /> 
+      <Footer />  
     </div>
   );
 };

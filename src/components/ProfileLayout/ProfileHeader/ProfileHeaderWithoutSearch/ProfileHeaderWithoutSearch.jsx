@@ -6,7 +6,14 @@ import toastmastersLogo from "../../../../assets/Logo-WhiteBG.jpg";
 import { TfiEmail } from "react-icons/tfi";
 import { CiBellOn } from "react-icons/ci";
 
-function ProfileHeaderWithoutSearch({ userAvatar }) {
+function ProfileHeaderWithoutSearch({ userAvatar, user }) {
+  const avatar = userAvatar || user?.avatar || user?.profile_image || null;
+
+  const userName =
+    user?.name ||
+    `${user?.first_name ?? ""} ${user?.last_name ?? ""}`.trim() ||
+    "User";
+
   return (
     <header className={styles.header}>
       {/* LOGO */}
@@ -42,14 +49,17 @@ function ProfileHeaderWithoutSearch({ userAvatar }) {
 
         {/* AVATAR */}
         <div className={styles.avatar}>
-          {userAvatar ? (
+          {avatar ? (
             <img
-              src={userAvatar}
-              alt="User profile"
+              src={avatar}
+              alt={`${userName} profile`}
               className={styles.avatarImg}
             />
           ) : (
-            <div className={styles.avatarPlaceholder}></div>
+            <div
+              className={styles.avatarPlaceholder}
+              aria-label="User avatar placeholder"
+            />
           )}
         </div>
       </div>
